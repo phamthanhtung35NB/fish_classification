@@ -144,6 +144,45 @@ Ma trận nhầm lẫn trên tập kiểm thử:
 | Total Samples | 1760  |
 
 
+## Thử mô hình:
+Tìm thấy 24 file ảnh
+  ✓ Ảnh: Bangus 19.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 1.0000
+  ✓ Ảnh: Bangus 21.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 0.9998
+  ✓ Ảnh: Bangus 32.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 0.9999
+  ✓ Ảnh: Bangus 35.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 1.0000
+  ✓ Ảnh: Bangus 42.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 1.0000
+  ✓ Ảnh: Black Spotted Barb 15.jpg, Thực tế: Black Spotted Barb, Dự đoán: Black Spotted Barb, Độ tin cậy: 1.0000
+  ✓ Ảnh: Black Spotted Barb 24.jpg, Thực tế: Black Spotted Barb, Dự đoán: Black Spotted Barb, Độ tin cậy: 0.9997
+  ✓ Ảnh: Black Spotted Barb 33.jpg, Thực tế: Black Spotted Barb, Dự đoán: Black Spotted Barb, Độ tin cậy: 0.9997
+  ✓ Ảnh: Black Spotted Barb 34.jpg, Thực tế: Black Spotted Barb, Dự đoán: Black Spotted Barb, Độ tin cậy: 0.9999
+  ✓ Ảnh: Black Spotted Barb 8.jpg, Thực tế: Black Spotted Barb, Dự đoán: Black Spotted Barb, Độ tin cậy: 0.9997
+  ✓ Ảnh: Gold Fish 22.jpg, Thực tế: Gold Fish, Dự đoán: Gold Fish, Độ tin cậy: 0.9992
+  ✓ Ảnh: Gold Fish 24.jpg, Thực tế: Gold Fish, Dự đoán: Gold Fish, Độ tin cậy: 1.0000
+  ✓ Ảnh: Gold Fish 33.jpg, Thực tế: Gold Fish, Dự đoán: Gold Fish, Độ tin cậy: 0.9999
+  ✓ Ảnh: Gold Fish 40.jpg, Thực tế: Gold Fish, Dự đoán: Gold Fish, Độ tin cậy: 0.9946
+  ✓ Ảnh: Gold Fish 43.jpg, Thực tế: Gold Fish, Dự đoán: Gold Fish, Độ tin cậy: 0.9999
+  ✓ Ảnh: Indo-Pacific Tarpon 13.jpg, Thực tế: Indo-Pacific Tarpon, Dự đoán: Indo-Pacific Tarpon, Độ tin cậy: 1.0000
+  ✓ Ảnh: Indo-Pacific Tarpon 16.jpg, Thực tế: Indo-Pacific Tarpon, Dự đoán: Indo-Pacific Tarpon, Độ tin cậy: 1.0000
+  ✓ Ảnh: Indo-Pacific Tarpon 22.jpg, Thực tế: Indo-Pacific Tarpon, Dự đoán: Indo-Pacific Tarpon, Độ tin cậy: 1.0000
+  ✓ Ảnh: Indo-Pacific Tarpon 31.jpg, Thực tế: Indo-Pacific Tarpon, Dự đoán: Indo-Pacific Tarpon, Độ tin cậy: 1.0000
+  ✓ Ảnh: Indo-Pacific Tarpon 9.jpg, Thực tế: Indo-Pacific Tarpon, Dự đoán: Indo-Pacific Tarpon, Độ tin cậy: 0.9998
+  ✓ Ảnh: Tenpounder 061.jpg, Thực tế: Tenpounder, Dự đoán: Tenpounder, Độ tin cậy: 0.9999
+  ✓ Ảnh: Tenpounder 062.jpg, Thực tế: Tenpounder, Dự đoán: Tenpounder, Độ tin cậy: 0.9993
+  ✓ Ảnh: Tenpounder 067.jpg, Thực tế: Tenpounder, Dự đoán: Tenpounder, Độ tin cậy: 0.9991
+  ✓ Ảnh: Tenpounder 069.jpg, Thực tế: Tenpounder, Dự đoán: Tenpounder, Độ tin cậy: 0.9930
+
+Kết quả kiểm tra:
+Tổng số ảnh: 24
+Dự đoán đúng: 24
+Độ chính xác: 1.0000
+
+
+![Image](https://github.com/user-attachments/assets/af26d836-951e-4fad-be65-acbbd9efb36c)
+
+
+![Image](https://github.com/user-attachments/assets/d7371736-0dbb-438f-9c42-5587d4d3e40d)
+
+
 ## 📁 Các tệp trong dự án
 
 - `trainBestGpu.ipynb`: Notebook huấn luyện và đánh giá
