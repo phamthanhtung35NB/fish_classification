@@ -60,24 +60,39 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
   - Validation: ~0.05
 
 
+## Console print
+
 Epoch 22/30 [Train]: 100%|██████████| 550/550 [01:30<00:00,  6.08it/s, acc=1.0000, loss=0.0020, lr=0.000020]
+  
 Epoch 22/30 [Val]: 100%|██████████| 110/110 [00:26<00:00,  4.16it/s, acc=0.9375, loss=0.2573]
+
 Epoch 22/30 - Train Loss: 0.0135, Train Acc: 0.9965, Val Loss: 0.0438, Val Acc: 0.9909
+
 Đã lưu mô hình tốt nhất với độ chính xác: 0.9909
 
+----
+
 === GPU Usage Information ===
+
 GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+
 Memory Allocated: 0.26 GB
+
 Max Memory Allocated: 0.66 GB
+
 Memory Reserved: 0.82 GB
+
 Total Memory: 4.00 GB
 Memory Utilization: 6.44%
-=============================
 
 Epoch 27/30 [Train]: 100%|██████████| 550/550 [01:29<00:00,  6.17it/s, acc=0.8889, loss=0.1834, lr=0.000020]
+
 Epoch 27/30 [Val]: 100%|██████████| 110/110 [00:25<00:00,  4.30it/s, acc=0.9375, loss=0.2455]
+
 Epoch 00027: reducing learning rate of group 0 to 4.0000e-06.
+
 Epoch 27/30 - Train Loss: 0.0135, Train Acc: 0.9960, Val Loss: 0.0555, Val Acc: 0.9898
+
 Early stopping tại epoch 27
 
 Biểu đồ độ chính xác và mất mát trong quá trình huấn luyện:
@@ -94,30 +109,26 @@ Ma trận nhầm lẫn trên tập kiểm thử:
 
 
 **Báo cáo phân loại nổi bật:**
-- Phần lớn các lớp đạt **F1-score ≥ 0.97**
+- Phần lớn các lớp đạt **F1-score ≥ 0.98**
 - F1-score trung bình trọng số: **0.99**
-
-| Class Name           | Precision | Recall | F1-Score | Support |
-| -------------------- | --------- | ------ | -------- | ------- |
-| Bangus               | 0.97      | 1.00   | 0.99     | 34      |
-| Big Head Carp        | 1.00      | 0.98   | 0.99     | 43      |
-| Black Spotted Barb   | 1.00      | 1.00   | 1.00     | 40      |
-| Catfish              | 0.95      | 1.00   | 0.98     | 62      |
-| Climbing Perch       | 0.97      | 0.97   | 0.97     | 30      |
-| Fourfinger Threadfin | 1.00      | 1.00   | 1.00     | 38      |
-| Freshwater Eel       | 1.00      | 1.00   | 1.00     | 55      |
-| Glass Perchlet       | 1.00      | 0.99   | 0.99     | 77      |
-| Goby                 | 0.99      | 1.00   | 1.00     | 124     |
-| Gold Fish            | 1.00      | 1.00   | 1.00     | 41      |
-| Gourami              | 1.00      | 1.00   | 1.00     | 63      |
-| Grass Carp           | 0.99      | 1.00   | 0.99     | 238     |
-| Green Spotted Puffer | 1.00      | 1.00   | 1.00     | 22      |
-| Indian Carp          | 0.98      | 1.00   | 0.99     | 53      |
-| Indo-Pacific Tarpon  | 0.93      | 1.00   | 0.96     | 39      |
-
 
 | Class Name            | Precision | Recall | F1-Score | Support |
 | --------------------- | --------- | ------ | -------- | ------- |
+| Bangus                | 0.97      | 1.00   | 0.99     | 34      |
+| Big Head Carp         | 1.00      | 0.98   | 0.99     | 43      |
+| Black Spotted Barb    | 1.00      | 1.00   | 1.00     | 40      |
+| Catfish               | 0.95      | 1.00   | 0.98     | 62      |
+| Climbing Perch        | 0.97      | 0.97   | 0.97     | 30      |
+| Fourfinger Threadfin  | 1.00      | 1.00   | 1.00     | 38      |
+| Freshwater Eel        | 1.00      | 1.00   | 1.00     | 55      |
+| Glass Perchlet        | 1.00      | 0.99   | 0.99     | 77      |
+| Goby                  | 0.99      | 1.00   | 1.00     | 124     |
+| Gold Fish             | 1.00      | 1.00   | 1.00     | 41      |
+| Gourami               | 1.00      | 1.00   | 1.00     | 63      |
+| Grass Carp            | 0.99      | 1.00   | 0.99     | 238     |
+| Green Spotted Puffer  | 1.00      | 1.00   | 1.00     | 22      |
+| Indian Carp           | 0.98      | 1.00   | 0.99     | 53      |
+| Indo-Pacific Tarpon   | 0.93      | 1.00   | 0.96     | 39      |
 | Jaguar Gapote         | 1.00      | 1.00   | 1.00     | 44      |
 | Janitor Fish          | 0.97      | 1.00   | 0.98     | 58      |
 | Knifefish             | 1.00      | 1.00   | 1.00     | 65      |
@@ -136,6 +147,12 @@ Ma trận nhầm lẫn trên tập kiểm thử:
 | Tilapia               | 1.00      | 0.98   | 0.99     | 56      |
 
 
+| Class Name            | Precision | Recall | F1-Score | Support |
+| --------------------- | --------- | ------ | -------- | ------- |
+|   accuracy            |           |        |   0.99   |   1760  |
+|           macro avg   |   0.99    |  0.99  |   0.99   |   1760  |
+|       weighted avg    |   0.99    |  0.99  |   0.99   |   1760  |
+
 | Metric        | Value |
 | ------------- | ----- |
 | Accuracy      | 0.99  |
@@ -145,6 +162,7 @@ Ma trận nhầm lẫn trên tập kiểm thử:
 
 
 ## Thử mô hình:
+```
 Tìm thấy 24 file ảnh
   ✓ Ảnh: Bangus 19.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 1.0000
   ✓ Ảnh: Bangus 21.jpg, Thực tế: Bangus, Dự đoán: Bangus, Độ tin cậy: 0.9998
@@ -175,12 +193,17 @@ Kết quả kiểm tra:
 Tổng số ảnh: 24
 Dự đoán đúng: 24
 Độ chính xác: 1.0000
-
+```
 
 ![Image](https://github.com/user-attachments/assets/af26d836-951e-4fad-be65-acbbd9efb36c)
 
 
 ![Image](https://github.com/user-attachments/assets/d7371736-0dbb-438f-9c42-5587d4d3e40d)
+
+
+#### Ảnh thực tế test ngoài tập dữ liệu:
+
+![Image](https://github.com/user-attachments/assets/71532ce6-2a41-4c68-80fd-7fe0b531d77a)
 
 
 ## 📁 Các tệp trong dự án
