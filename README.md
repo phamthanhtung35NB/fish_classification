@@ -59,6 +59,27 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
   - Train: ~0.01
   - Validation: ~0.05
 
+
+Epoch 22/30 [Train]: 100%|██████████| 550/550 [01:30<00:00,  6.08it/s, acc=1.0000, loss=0.0020, lr=0.000020]
+Epoch 22/30 [Val]: 100%|██████████| 110/110 [00:26<00:00,  4.16it/s, acc=0.9375, loss=0.2573]
+Epoch 22/30 - Train Loss: 0.0135, Train Acc: 0.9965, Val Loss: 0.0438, Val Acc: 0.9909
+Đã lưu mô hình tốt nhất với độ chính xác: 0.9909
+
+=== GPU Usage Information ===
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+Memory Allocated: 0.26 GB
+Max Memory Allocated: 0.66 GB
+Memory Reserved: 0.82 GB
+Total Memory: 4.00 GB
+Memory Utilization: 6.44%
+=============================
+
+Epoch 27/30 [Train]: 100%|██████████| 550/550 [01:29<00:00,  6.17it/s, acc=0.8889, loss=0.1834, lr=0.000020]
+Epoch 27/30 [Val]: 100%|██████████| 110/110 [00:25<00:00,  4.30it/s, acc=0.9375, loss=0.2455]
+Epoch 00027: reducing learning rate of group 0 to 4.0000e-06.
+Epoch 27/30 - Train Loss: 0.0135, Train Acc: 0.9960, Val Loss: 0.0555, Val Acc: 0.9898
+Early stopping tại epoch 27
+
 Biểu đồ độ chính xác và mất mát trong quá trình huấn luyện:
 
 ![Accuracy & Loss](https://github.com/user-attachments/assets/835a2f62-e595-4b3f-8727-6f1777565745)
