@@ -20,7 +20,7 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
 
 ## 🧠 Mô hình
 
-- Mô hình CNN được xây dựng bằng TensorFlow/Keras (chi tiết trong `train2.ipynb`)
+- Mô hình CNN được xây dựng bằng TensorFlow/Keras (chi tiết trong `trainBestGpu.ipynb`)
 - Bao gồm:
   - Các lớp Convolutional và MaxPooling
   - Chuẩn hóa BatchNormalization
@@ -127,9 +127,8 @@ Ma trận nhầm lẫn trên tập kiểm thử:
 
 ## 📁 Các tệp trong dự án
 
-- `train2.ipynb`: Notebook huấn luyện và đánh giá
+- `trainBestGpu.ipynb`: Notebook huấn luyện và đánh giá
 - `README.md`: Tài liệu hướng dẫn (file này)
-- `images/`: Chứa hình ảnh biểu đồ và ma trận nhầm lẫn (nếu có)
 
 ## 🚀 Cách chạy
 
