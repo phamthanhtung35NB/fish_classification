@@ -1,0 +1,37 @@
+                       precision    recall  f1-score   support
+
+               Bangus       0.97      1.00      0.99        34
+        Big Head Carp       1.00      0.98      0.99        43
+   Black Spotted Barb       1.00      1.00      1.00        40
+              Catfish       0.95      1.00      0.98        62
+       Climbing Perch       0.97      0.97      0.97        30
+ Fourfinger Threadfin       1.00      1.00      1.00        38
+       Freshwater Eel       1.00      1.00      1.00        55
+       Glass Perchlet       1.00      0.99      0.99        77
+                 Goby       0.99      1.00      1.00       124
+            Gold Fish       1.00      1.00      1.00        41
+              Gourami       1.00      1.00      1.00        63
+           Grass Carp       0.99      1.00      0.99       238
+ Green Spotted Puffer       1.00      1.00      1.00        22
+          Indian Carp       0.98      1.00      0.99        53
+  Indo-Pacific Tarpon       0.93      1.00      0.96        39
+        Jaguar Gapote       1.00      1.00      1.00        44
+         Janitor Fish       0.97      1.00      0.98        58
+            Knifefish       1.00      1.00      1.00        65
+Long-Snouted Pipefish       1.00      1.00      1.00        52
+        Mosquito Fish       1.00      1.00      1.00        51
+              Mudfish       1.00      0.88      0.94        34
+               Mullet       0.97      0.97      0.97        38
+            Pangasius       1.00      1.00      1.00        38
+                Perch       1.00      1.00      1.00        60
+            Scat Fish       1.00      1.00      1.00        33
+          Silver Barb       1.00      0.98      0.99        64
+          Silver Carp       1.00      1.00      1.00        48
+         Silver Perch       0.98      1.00      0.99        57
+            Snakehead       0.96      0.96      0.96        47
+           Tenpounder       1.00      0.91      0.95        56
+              Tilapia       1.00      0.98      0.99        56
+
+             accuracy                           0.99      1760
+            macro avg       0.99      0.99      0.99      1760
+         weighted avg       0.99      0.99      0.99      1760

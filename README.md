@@ -1,10 +1,3 @@
----
-noteId: "f2d324102e8f11f09451d95a1e1de559"
-tags: []
-
----
-
-
 # Phân Loại Loài Cá Bằng Deep Learning 🐟
 
 ## 📌 Giới thiệu
@@ -12,6 +5,8 @@ tags: []
 Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh bằng cách sử dụng Mạng Nơ-ron Tích Chập (CNN). Mô hình đạt độ chính xác **98.98%** trên tập dữ liệu kiểm thử và hỗ trợ phân loại **hơn 40 loài cá**.
 
 ## 📊 Dữ liệu
+
+[Link dataset kaggle](https://www.kaggle.com/datasets/markdaniellampa/fish-dataset)
 
 - **Số lượng lớp:** 31 loài cá
 - **Tổng số mẫu (val):** 1760
@@ -29,7 +24,7 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
 
 ## 🏋️‍♂️ Huấn luyện
 
-- **Số epoch:** 26
+- **Số epoch tối đa:** 30
 - **Tối ưu hóa:** Adam
 - **Hàm mất mát:** Categorical Crossentropy
 - **Augmentation:** Có (lật ngang, zoom, v.v.)
@@ -66,11 +61,14 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
 
 Biểu đồ độ chính xác và mất mát trong quá trình huấn luyện:
 
-![Accuracy & Loss](5ac7c620-c203-4ff3-9736-c6abbe34863e.png)
+![Accuracy & Loss](https://github.com/user-attachments/assets/835a2f62-e595-4b3f-8727-6f1777565745)
+
+Evaluating: 100%|██████████| 110/110 [00:17<00:00,  6.36it/s]
+Độ chính xác tổng thể: 0.9898
 
 Ma trận nhầm lẫn trên tập kiểm thử:
 
-![Confusion Matrix](19fd351f-d643-4c92-a926-097a67b34a5a.png)
+![Confusion Matrix](https://github.com/user-attachments/assets/088db298-c7a2-48fe-9b98-c5932cb7d619)
 
 
 
