@@ -214,7 +214,7 @@ Dự đoán đúng: 24
 ## 🚀 Cách chạy
 
 ```bash
-git clone <link-repo>
+git clone https://github.com/phamthanhtung35NB/fish_classification.git
 cd fish-classification
 jupyter notebook trainBestGpu.ipynb
 ```
@@ -222,6 +222,6 @@ jupyter notebook trainBestGpu.ipynb
 Yêu cầu cài đặt các thư viện:
 
 ```bash
-pip install tensorflow matplotlib seaborn scikit-learn
+pip install torch torchvision matplotlib seaborn scikit-learn tqdm pillow
 ```
 
