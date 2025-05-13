@@ -1,34 +1,41 @@
+
 # Phân Loại Loài Cá Bằng Deep Learning 🐟
 
 ## 📌 Giới thiệu
 
-Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh bằng cách sử dụng Mạng Nơ-ron Tích Chập (CNN). Mô hình đạt độ chính xác **98.98%** trên tập dữ liệu kiểm thử và hỗ trợ phân loại **hơn 40 loài cá**.
+Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh bằng cách sử dụng Mạng Nơ-ron Tích Chập (CNN). Mô hình đạt độ chính xác **98.98%** trên tập dữ liệu kiểm thử và hỗ trợ phân loại **31 loài cá**.
 
 ## 📊 Dữ liệu
 
-[Link dataset kaggle](https://www.kaggle.com/datasets/markdaniellampa/fish-dataset)
+[Link dataset Kaggle](https://www.kaggle.com/datasets/markdaniellampa/fish-dataset)
 
-- **Số lượng lớp:** 31 loài cá
-- **Tổng số mẫu (val):** 1760
-- **Định dạng dữ liệu:** Thư mục ảnh được gắn nhãn
-- **Kích thước ảnh đầu vào:** (ví dụ 224x224 RGB)
+* **Số lượng lớp:** 31 loài cá
+* **Tổng số mẫu validation:** 1760
+* **Định dạng dữ liệu:** Thư mục ảnh được gắn nhãn
+* **Kích thước ảnh đầu vào:** 224x224 RGB
 
 ## 🧠 Mô hình
 
-- Mô hình CNN được xây dựng bằng TensorFlow/Keras (chi tiết trong `trainBestGpu.ipynb`)
-- Bao gồm:
-  - Các lớp Convolutional và MaxPooling
-  - Chuẩn hóa BatchNormalization
-  - Dropout để giảm overfitting
-  - Các lớp Dense fully connected
+* Sử dụng mô hình **ResNet** (transfer learning) với PyTorch
+* Bao gồm:
+
+  * Tiền xử lý ảnh bằng `torchvision.transforms`
+  * Fine-tuning ResNet với trọng số pretrained
+  * Chuẩn hóa ảnh, augmentation và resize về kích thước chuẩn
 
 ## 🏋️‍♂️ Huấn luyện
 
-- **Số epoch tối đa:** 30
-- **Tối ưu hóa:** Adam
-- **Hàm mất mát:** Categorical Crossentropy
-- **Augmentation:** Có (lật ngang, zoom, v.v.)
-- **Tách tập validation:** Có sử dụng
+* **Epoch:** tối đa 30
+* **Tối ưu hóa:** AdamW
+* **Hàm mất mát:** CrossEntropyLoss
+* **Augmentation:** Resize, Horizontal Flip, Rotation
+* **Tách validation:** sử dụng `torch.utils.data.random_split`
+
+## 📈 Kết quả
+
+* **Độ chính xác trên tập test:** 98.98%
+* **Confusion matrix & classification report:** trực quan bằng `seaborn` và `sklearn`
+
 
 | Tên tiếng Anh          | Tên tiếng Việt         |    | Tên tiếng Anh          | Tên tiếng Việt         |
 |------------------------|------------------------|----|------------------------|------------------------|
