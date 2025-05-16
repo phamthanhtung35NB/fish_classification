@@ -9,8 +9,8 @@ Dự án này nhằm phân loại các loài cá khác nhau từ hình ảnh b�
 
 [Link dataset Kaggle](https://www.kaggle.com/datasets/markdaniellampa/fish-dataset)
 
+*Thuộc tính của tập dữ liệu:*
 * **Số lượng lớp:** 31 loài cá
-* Thuộc tính của tập dữ liệu:
 * **Tổng số hình ảnh:** 13.304 ảnh
 * **Số lượng ảnh trong tập huấn luyện:** 8.791 ảnh
 * **Số lượng ảnh trong tập kiểm tra:** 2.751 ảnh
